@@ -1,0 +1,22 @@
+
+function cambiarColor(elemento) {
+            elemento.style.color = '#B52626'; 
+        }
+
+        // Función para restaurar el color original al quitar mouse
+function restaurarColor(elemento) {
+            elemento.style.color = '#4AD9D9'; 
+        }
+
+const enlace = document.getElementById('enlace');        
+
+//Eventos owo
+
+enlace.addEventListener('mouseover', function() {
+    cambiarColor(enlace);
+});
+
+enlace.addEventListener('mouseout', function() {
+    restaurarColor(enlace);
+});
+
